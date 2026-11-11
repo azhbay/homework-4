@@ -1,0 +1,205 @@
+
+
+body {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #f4f6f8;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+header {
+    padding: 20px;
+    background-color: #dceaf2;
+    border: 1px solid #b8cbd6;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+header img {
+    display: block;
+    margin-top: 15px;
+}
+
+
+
+nav {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #e8f0f5;
+    border-radius: 5px;
+}
+
+
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+main {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+section {
+    padding: 15px 0;
+}
+
+section h2 {
+    font-size: 24px;
+}
+
+section h3 {
+    font-size: 18px;
+}
+
+
+
+#skills ul {
+    padding-left: 25px;
+}
+
+#skills li {
+    margin-bottom: 6px;
+}
+
+
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#projects > h2 {
+    width: 100%;
+}
+
+#projects article {
+    flex: 1 1 220px;
+    margin: 0;
+    padding: 15px;
+    background-color: #edf3f7;
+    border: 1px solid #cbd9e1;
+    border-radius: 8px;
+}
+
+#projects article h3 {
+    margin-top: 5px;
+}
+
+/* Цитата */
+
+blockquote {
+    margin: 20px 0;
+    padding: 10px 15px;
+    background-color: #f1f5f7;
+    border-left: 3px solid #7899ad;
+}
+
+
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+
+
+details {
+    margin: 15px 0;
+    padding: 12px;
+    background-color: #edf3f7;
+    border-radius: 5px;
+}
+
+summary {
+    cursor: pointer;
+}
+
+
+
+hr {
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 20px 0;
+}
+
+
+
+footer {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #dceaf2;
+    border: 1px solid #b8cbd6;
+    border-radius: 8px;
+}
+
+
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px auto;
+        padding: 0 10px;
+    }
+
+    main,
+    nav,
+    header,
+    footer {
+        padding: 12px;
+    }
+
+    #projects article {
+        flex-basis: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
