@@ -207,3 +207,49 @@ footer {
         flex-direction: column;
     }
 }
+
+#order {
+    padding: 20px;
+    background-color: #edf3f7;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b8cbd6;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+#order button {
+    padding: 10px 20px;
+    background-color: #7899ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#order button:hover {
+    background-color: #5d7e92;
+}
