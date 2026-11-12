@@ -253,3 +253,35 @@ footer {
 #order button:hover {
     background-color: #5d7e92;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #cbd5dc;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #dceaf2;
+}
+
+tbody th {
+    background-color: #99c9e7;
+}
+
+tbody tr:hover {
+    background-color: #f4f6f8;
+}
+tbody tr:nth-child(odd) {
+    background-color: #e8f0f5;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
