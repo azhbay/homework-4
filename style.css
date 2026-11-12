@@ -237,7 +237,7 @@ footer {
 }
 
 .form-group textarea {
-    resize: none;
+    resize: vertical;
 }
 
 #order button {
