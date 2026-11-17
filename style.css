@@ -285,3 +285,8 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
     background-color: #ffffff;
 }
+td.available {
+    background-color: #e2f3e5;
+    color: #246b36;
+    font-weight: bold;
+}
