@@ -1,0 +1,21 @@
+@media (max-width: 600px) {
+    body {
+        margin: 10px auto;
+        padding: 0 10px;
+    }
+
+    main,
+    nav,
+    header,
+    footer {
+        padding: 12px;
+    }
+
+    #projects article {
+        flex-basis: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}

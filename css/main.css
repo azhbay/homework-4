@@ -1,0 +1,51 @@
+main {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+section {
+    padding: 15px 0;
+}
+
+section h2 {
+    font-size: 24px;
+}
+
+section h3 {
+    font-size: 18px;
+}
+
+#skills ul {
+    padding-left: 25px;
+}
+
+#skills li {
+    margin-bottom: 6px;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 10px 15px;
+    background-color: #f1f5f7;
+    border-left: 3px solid #7899ad;
+}
+
+details {
+    margin: 15px 0;
+    padding: 12px;
+    background-color: #edf3f7;
+    border-radius: 5px;
+}
+
+summary {
+    cursor: pointer;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 20px 0;
+}

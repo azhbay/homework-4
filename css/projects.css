@@ -1,0 +1,22 @@
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#projects > h2 {
+    width: 100%;
+}
+
+#projects article {
+    flex: 1 1 220px;
+    margin: 0;
+    padding: 15px;
+    background-color: #edf3f7;
+    border: 1px solid #cbd9e1;
+    border-radius: 8px;
+}
+
+#projects article h3 {
+    margin-top: 5px;
+}
