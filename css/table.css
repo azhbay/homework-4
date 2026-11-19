@@ -36,3 +36,11 @@ td.available {
     color: #246b36;
     font-weight: bold;
 }
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-container table {
+    min-width: 600px;
+}

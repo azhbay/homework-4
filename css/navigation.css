@@ -1,27 +1,36 @@
 nav {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: white;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 nav ul {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    min-width: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
 nav li {
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 0;
     margin: 0;
 }
 
 nav a {
+    display: block;
+    box-sizing: border-box;
+    padding: 5px 6px;
     color: black;
+    font-size: 14px;
     text-decoration: none;
-    padding: 5px 10px;
+    white-space: nowrap;
     background-color: #e8f0f5;
     border-radius: 5px;
 }
