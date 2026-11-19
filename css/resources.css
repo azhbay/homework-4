@@ -1,0 +1,44 @@
+
+#resources {
+    margin-top: 30px;
+}
+
+#resources > p {
+    margin-bottom: 20px;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.resource-card {
+    position: relative;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 45px 18px 18px;
+    background-color: #edf3f7;
+    border: 1px solid #cbd9e1;
+    border-radius: 8px;
+}
+
+.resource-card h3 {
+    margin-top: 5px;
+    color: #24536d;
+}
+
+.resource-card p {
+    line-height: 1.5;
+}
+
+.resource-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 5px 9px;
+    background-color: #dceaf2;
+    color: #24536d;
+    font-size: 12px;
+    border-radius: 5px;
+}
