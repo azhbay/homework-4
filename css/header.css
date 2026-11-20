@@ -21,8 +21,8 @@ header nav {
 
 header nav ul {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
     gap: 8px;
     padding: 0;
