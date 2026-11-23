@@ -50,10 +50,16 @@ header img {
     border-radius: 6px;
     border: 1px solid #24536d;
     white-space: nowrap;
+    transition: background-color 0.3s ease;
 }
 
 .header-button:hover {
     background-color: #24536d;
+}
+
+.header-button:focus-visible {
+    outline: 3px solid #f0a830;
+    outline-offset: 3px;
 }
 .header-info {
     display: flex;
