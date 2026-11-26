@@ -1,0 +1,393 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #302044;
+    background-color: #f7f3ff;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 5%;
+    background-color: white;
+    border-bottom: 1px solid #dfcafa;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7138c8;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    color: #54249e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f05b78;
+    text-decoration: underline;
+}
+
+nav a:focus-visible {
+    outline: 3px solid #ff9b54;
+    outline-offset: 4px;
+}
+
+
+section {
+    padding: 50px 5%;
+}
+
+section h2 {
+    color: #54249e;
+    font-size: 28px;
+}
+
+
+#about {
+    background-color: #e9dcff;
+    text-align: center;
+}
+
+#about > p:first-child {
+    color: #7138c8;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#about h1 {
+    max-width: 750px;
+    margin: 15px auto;
+    color: #54249e;
+    font-size: 40px;
+}
+
+#about p {
+    max-width: 650px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+#about a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 24px;
+    color: white;
+    background-color: #7138c8;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    min-height: 430px;
+    padding: 60px 8%;
+    overflow: hidden;
+
+    background-image: url("../images/background1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+}
+#about a:hover {
+    background-color: #54249e;
+}
+
+#benefits,
+#courses {
+    background-image: url("../images/background2.jpg");
+background-size: cover;
+background-position: center;
+}
+#application {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#benefits article {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 1px solid #dfcafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(113, 56, 200, 0.08);
+}
+
+#benefits h3 {
+    color: #7138c8;
+}
+
+/* Карточки курсов */
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    min-width: 0;
+    padding: 22px;
+    background-color: white;
+    border: 1px solid #dfcafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(113, 56, 200, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(113, 56, 200, 0.15);
+}
+
+.course-card h3 {
+    color: #7138c8;
+}
+
+.course-card p {
+    line-height: 1.5;
+}
+
+/* Форма */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+}
+
+form label {
+    font-weight: bold;
+    color: #54249e;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbb4ed;
+    border-radius: 6px;
+    font: inherit;
+    background-color: white;
+}
+
+button {
+    padding: 13px;
+    color: white;
+    background-color: #f05b78;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d83c60;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid #ff9b54;
+    outline-offset: 3px;
+}
+
+/* Подвал */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 25px 5%;
+    background-color: #54249e;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+/* Адаптивность */
+
+@media (max-width: 768px) {
+    .course-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+
+    #about h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 35px 5%;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#about {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Анимация появления карточек */
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.course-card {
+    animation: cardAppear 0.7s ease-out backwards;
+}
+
+.course-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.course-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    min-height: 430px;
+    padding: 60px 8%;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 650px;
+    animation: textAppear 1s ease-out;
+}
+
+.hero-label {
+    color: #7138c8;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-description {
+    line-height: 1.7;
+}
+
+.code-decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7138c8, #f05b78);
+    color: white;
+    font-size: 52px;
+    font-weight: bold;
+    box-shadow: 0 15px 35px rgba(113, 56, 200, 0.25);
+    animation: rotateCode 8s linear infinite;
+}
+
+@keyframes rotateCode {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes textAppear {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 600px) {
+    #about {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .code-decoration {
+        width: 130px;
+        height: 130px;
+        font-size: 38px;
+    }
+}

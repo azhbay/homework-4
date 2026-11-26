@@ -9,18 +9,24 @@
 </head>
 
 <body>
+
 <header id="top">
-    <div class="header-info">
+
+    <div class="header-top">
         <img src="images/logo.png" alt="Логотип AS" class="site-logo">
 
-        <div class="header-text">
-            <h1>Алексей Смирнов</h1>
-            <p><strong>Junior Frontend Developer</strong></p>
-            <p><em>Превращаю идеи и строки кода в работающие сайты.</em></p>
+        <div class="header-actions">
+            <a href="course.html" target="_blank" rel="noopener noreferrer" class="header-action">
+                Мои курсы ↗
+            </a>
+
+            <a href="#order" class="header-action header-action-primary">
+                Заказать услугу
+            </a>
         </div>
     </div>
-  
-      <nav>
+
+    <nav>
         <ul>
             <li><a href="#about">Обо мне</a></li>
             <li><a href="#skills">Мои навыки</a></li>
@@ -31,21 +37,28 @@
             <li><a href="#order">Заказать услугу</a></li>
             <li><a href="#resources">Полезные ресурсы</a></li>
             <li><a href="#contacts">Контакты</a></li>
-            <li><a href="catalog.html" target="_blank">Каталог проектов</a></li>
+            <li><a href="catalog.html" target="_blank" rel="noopener noreferrer">Каталог проектов</a></li>
         </ul>
     </nav>
-    
 
-    <a href="#order" class="header-button">Заказать услугу</a>
+    <div class="header-main">
+        <div class="header-text">
+            <h1>Алексей Смирнов</h1>
+            <p><strong>Junior Frontend Developer</strong></p>
+            <p><em>Превращаю идеи и строки кода в работающие сайты.</em></p>
+        </div>
 
-    <img
-        src="images/laptop.jpeg"
-        alt="a man sitting beside his laptop"
-        width="220"
-        height="150"
-    >
+        <img
+            src="images/laptop.jpeg"
+            alt="Разработчик работает за ноутбуком"
+            width="330"
+            height="220"
+            class="header-laptop"
+        >
+    </div>
 
 </header>
+
     <hr>
 
     <main>
@@ -377,6 +390,7 @@
                 <option value="website">Разработка сайта</option>
                 <option value="design">Верстка страницы</option>
                 <option value="support">Поддержка сайта</option>
+                <option value="support">Записаться на курсы</option>
                 <option value="other">Другое</option>
             </select>
         </div>

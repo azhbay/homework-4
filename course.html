@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CodeStart — онлайн-курсы по веб-разработке для начинающих.">
+    <title>CodeStart — онлайн-обучение</title>
+    <link rel="stylesheet" href="css/course.css">
+</head>
+<body>
+
+    <header>
+        <a href="course.html" class="logo">CodeStart</a>
+
+        <nav aria-label="Основная навигация">
+            <ul>
+                <li><a href="#about">О сервисе</a></li>
+                <li><a href="#benefits">Преимущества</a></li>
+                <li><a href="#courses">Курсы</a></li>
+                <li><a href="#application">Заявка</a></li>
+                <li><a href="index.html">Моё портфолио</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+<section id="about">
+    <div class="hero-content">
+        <p class="hero-label">Онлайн-образование</p>
+
+        <h1>Начни путь в веб-разработке с CodeStart</h1>
+
+        <p class="hero-description">
+            Изучай HTML, CSS и JavaScript с нуля.
+            Получай практические навыки и создавай свои первые сайты.
+        </p>
+
+        <a href="#courses">Посмотреть курсы</a>
+    </div>
+
+    <div class="code-decoration" aria-hidden="true">
+        &lt;/&gt;
+    </div>
+</section>
+
+
+        <section id="benefits">
+            <h2>Почему выбирают нас</h2>
+
+            <article>
+                <h3>Обучение с нуля</h3>
+                <p>Материалы подходят для тех, кто только начинает изучать программирование.</p>
+            </article>
+
+            <article>
+                <h3>Практические задания</h3>
+                <p>Закрепляй теорию на реальных примерах и небольших проектах.</p>
+            </article>
+
+            <article>
+                <h3>Гибкий график</h3>
+                <p>Учись в удобное время и самостоятельно планируй занятия.</p>
+            </article>
+        </section>
+
+        <section id="courses">
+            <h2>Наши курсы</h2>
+
+            <div class="course-list">
+                <article class="course-card">
+                    <h3>HTML для начинающих</h3>
+                    <p>Научись создавать структуру веб-страниц.</p>
+                    <p>Продолжительность: 4 недели</p>
+                </article>
+
+                <article class="course-card">
+                    <h3>CSS и оформление сайтов</h3>
+                    <p>Изучи стили, цвета, шрифты и адаптивную верстку.</p>
+                    <p>Продолжительность: 6 недель</p>
+                </article>
+
+                <article class="course-card">
+                    <h3>Основы JavaScript</h3>
+                    <p>Познакомься с основами программирования и интерактивностью.</p>
+                    <p>Продолжительность: 8 недель</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="application">
+            <h2>Оставить заявку</h2>
+            <p>Заполни форму, и мы свяжемся с тобой.</p>
+
+            <form>
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="course">Выбери курс</label>
+                <select id="course" name="course" required>
+                    <option value="">Выбрать курс</option>
+                    <option value="html">HTML для начинающих</option>
+                    <option value="css">CSS и оформление сайтов</option>
+                    <option value="javascript">Основы JavaScript</option>
+                </select>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 CodeStart. Учебный проект.</p>
+        <a href="index.html">Вернуться в портфолио</a>
+    </footer>
+
+</body>
+</html>
