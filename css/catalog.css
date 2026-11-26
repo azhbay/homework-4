@@ -1,0 +1,199 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    color: #263746;
+    background-color: #f5f8fa;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0;
+    border-bottom: 1px solid #d5e0e6;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #24536d;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a:link {
+    color: #24536d;
+}
+
+a:visited {
+    color: #654b80;
+}
+
+a:hover {
+    color: #1682a8;
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 3px solid #f0a830;
+    outline-offset: 4px;
+}
+
+a:active {
+    color: #bd572f;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    padding: 55px 0 35px;
+}
+
+.eyebrow {
+    color: #527d96;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.intro h1 {
+    margin: 10px 0;
+    font-size: 36px;
+}
+
+.intro p:last-child {
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+.filters {
+    padding: 20px;
+    background-color: #e7f0f5;
+    border-radius: 8px;
+}
+
+.filters h2,
+.projects h2 {
+    margin-top: 0;
+}
+
+.filters p {
+    color: #526674;
+}
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-chip {
+    padding: 9px 14px;
+    background-color: white;
+    border: 1px solid #b8cbd6;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.projects {
+    padding: 40px 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    min-width: 0;
+    padding: 22px;
+    background-color: white;
+    border: 1px solid #d5e0e6;
+    border-radius: 8px;
+}
+
+.project-number {
+    color: #7899ad;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.project-card h3 {
+    margin: 12px 0;
+    color: #24536d;
+}
+
+.project-card p {
+    min-height: 60px;
+    line-height: 1.5;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0;
+    border-top: 1px solid #d5e0e6;
+}
+
+@media (min-width: 600px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    .project-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 0 12px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+}
